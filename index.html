@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Business Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+  <div class="max-w-sm w-full bg-gray-900/80 backdrop-blur-md rounded-2xl shadow-2xl p-6 text-center space-y-5">
+    
+    <!-- Profile Image -->
+    <img src="me.jpeg" alt="Profile Picture" 
+         class="w-28 h-28 mx-auto rounded-full border-4 border-indigo-400 shadow-md">
+    
+    <!-- Name & Title -->
+    <div>
+      <h1 class="text-2xl font-bold tracking-tight">Negin Kianimarvast</h1>
+      <p class="text-gray-400 text-sm">IT Administrator • UI Designer • Web Developer</p>
+    </div>
+    
+    <!-- Bio -->
+    <p class="text-gray-300 text-sm leading-relaxed">
+        IT-Support & Webentwicklung • Creating modern solutions for people and technology.
+        </p>
+    
+    <!-- Contact Buttons -->
+    <div class="flex justify-center gap-4">
+      <a href="neginakiani@gmail.com" 
+         class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-xl text-sm font-medium shadow">
+        Email
+      </a>
+      <a href="https://www.linkedin.com/in/negin-kianimarvast-95bb751b8" target="_blank" 
+         class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-xl text-sm font-medium shadow">
+        LinkedIn
+      </a>
+      <a href="https://github.com/Neginakia" target="_blank" 
+         class="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-xl text-sm font-medium shadow">
+        GitHub
+      </a>
+    </div>
+    
+    <!-- QR Code Section -->
+    <div class="mt-6">
+      <p class="text-xs text-gray-400 mb-2">Scan to save my contact</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=130x130&data=https://neginakia.github.io/digital-business-card/" 
+           alt="QR Code" class="mx-auto rounded-md shadow">
+    </div>
+  </div>
+</body>
+</html>
